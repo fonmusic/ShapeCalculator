@@ -20,9 +20,19 @@ public class Triangle : Shape
 
     public Triangle(double sideA, double sideB, double sideC)
     {
+        if (!IsValidTriangle(sideA, sideB, sideC))
+        {
+            throw new ArgumentException("Invalid triangle sides");
+        }
+        
         _sideA = sideA;
         _sideB = sideB;
         _sideC = sideC;
+    }
+
+    private static bool IsValidTriangle(double sideA, double sideB, double sideC)
+    {
+        return (sideA + sideB > sideC) && (sideB + sideC > sideA) && (sideC + sideA > sideB);
     }
 
     //Heron's formula where p - half of the perimeter

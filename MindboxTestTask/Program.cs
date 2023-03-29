@@ -11,5 +11,7 @@ class Program
         var figure2 = new Triangle(3, 4, 5);
         Console.WriteLine(figure2.IsRightTriangle);
         Console.WriteLine(figure2.CalculateArea());
+
+        var figure3 = new Triangle(3, 4, 15);
     }
 }
