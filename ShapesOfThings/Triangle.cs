@@ -5,6 +5,8 @@ public class Triangle : Shape
     private readonly double _sideB;
     private readonly double _sideC;
 
+    private const double Tolerance = Double.Epsilon; // constant to eliminate the problems of comparing double values
+
     public bool IsRightTriangle
     {
         get
@@ -14,7 +16,7 @@ public class Triangle : Shape
             Array.Sort(sides);
 
             // Check if the sum of the squares of the two sides of the triangle is equal to the square of the third side
-            return Math.Pow(sides[2], 2) == Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2);
+            return Math.Abs(Math.Pow(sides[2], 2) - (Math.Pow(sides[0], 2) + Math.Pow(sides[1], 2))) < Tolerance;
         }
     }
 
@@ -24,7 +26,7 @@ public class Triangle : Shape
         {
             throw new ArgumentException("Invalid triangle sides");
         }
-        
+
         _sideA = sideA;
         _sideB = sideB;
         _sideC = sideC;
