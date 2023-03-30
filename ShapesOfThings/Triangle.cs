@@ -1,12 +1,11 @@
 namespace ShapesOfThings;
-public class Triangle : Shape
+public class Triangle : IShape
 {
     private readonly double _sideA;
     private readonly double _sideB;
     private readonly double _sideC;
 
     private const double Tolerance = Double.Epsilon; // constant to eliminate the problems of comparing double values
-
     public bool IsRightTriangle
     {
         get
@@ -38,7 +37,7 @@ public class Triangle : Shape
     }
 
     //Heron's formula where p - half of the perimeter
-    public override double CalculateArea()
+    public double CalculateArea()
     {
         double p = (_sideA + _sideB + _sideC) / 2;
         return Math.Sqrt(p * (p - _sideA) * (p - _sideB) * (p - _sideC));

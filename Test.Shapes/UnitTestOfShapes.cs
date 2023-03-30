@@ -12,7 +12,7 @@ public class UnitTestOfShapes
         // Arrange
         double radius = 5;
         double expectedArea = Math.PI * radius * radius;
-        Shape circle = new Circle(radius);
+        IShape circle = new Circle(radius);
 
         // Act
         double actualArea = circle.CalculateArea();
@@ -29,7 +29,7 @@ public class UnitTestOfShapes
         double sideB = 3;
         double sideC = 4;
         double expectedArea = 2.904738;
-        Shape triangle = new Triangle(sideA, sideB, sideC);
+        IShape triangle = new Triangle(sideA, sideB, sideC);
 
         // Act
         double actualArea = triangle.CalculateArea();
