@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindboxTestTask", "MindboxT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesOfThings", "ShapesOfThings\ShapesOfThings.csproj", "{C3D03399-4AD2-4D95-875E-599AE82F6BA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Shapes", "Test.Shapes\Test.Shapes.csproj", "{795F30B2-19CA-4195-A721-8CD7C5AB412F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C3D03399-4AD2-4D95-875E-599AE82F6BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D03399-4AD2-4D95-875E-599AE82F6BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D03399-4AD2-4D95-875E-599AE82F6BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795F30B2-19CA-4195-A721-8CD7C5AB412F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795F30B2-19CA-4195-A721-8CD7C5AB412F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795F30B2-19CA-4195-A721-8CD7C5AB412F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795F30B2-19CA-4195-A721-8CD7C5AB412F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
