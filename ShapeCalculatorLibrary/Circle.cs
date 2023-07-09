@@ -1,4 +1,4 @@
-namespace ShapesOfThings;
+namespace ShapeCalculatorLibrary;
 public class Circle : IShape
 {
     private readonly double _radius;

@@ -1,5 +1,5 @@
-using ShapesOfThings;
-namespace Test.Shapes;
+using ShapeCalculatorLibrary;
+namespace ShapeCalculatorUnitTests;
 
 [TestClass]
 public class UnitTestOfShapes
@@ -45,7 +45,7 @@ public class UnitTestOfShapes
         double sideA = 3;
         double sideB = 4;
         double sideC = 5;
-        Triangle triangle = new Triangle(sideA, sideB, sideC);
+        var triangle = new Triangle(sideA, sideB, sideC);
 
         // Act
         bool isRightTriangle = triangle.IsRightTriangle; 
@@ -61,7 +61,7 @@ public class UnitTestOfShapes
         double sideA = 2;
         double sideB = 3;
         double sideC = 4;
-        Triangle triangle = new Triangle(sideA, sideB, sideC);
+        var triangle = new Triangle(sideA, sideB, sideC);
 
         // Act
         bool isRightTriangle = triangle.IsRightTriangle;
@@ -79,7 +79,7 @@ public class UnitTestOfShapes
         double sideC = 5;
 
         // Act
-        Triangle triangle = new Triangle(sideA, sideB, sideC);
+        var triangle = new Triangle(sideA, sideB, sideC);
 
         // Assert
         Assert.IsNotNull(triangle);

@@ -1,4 +1,4 @@
-namespace ShapesOfThings;
+namespace ShapeCalculatorLibrary;
 public class Triangle : IShape
 {
     private readonly double _sideA;
